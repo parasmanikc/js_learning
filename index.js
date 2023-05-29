@@ -45,4 +45,15 @@ const objectWithFunction = {
         football: 50 
     }
 }
-console.log(objectWithFunction.extra.football)
+
+// Array can also have any type of value
+const mixArr = [1,2,3,'four', {a: 'b', c: 'd'}, (a,b) => { return a + b}]
+
+// console.log(mixArr[4].a) => accessing a value inside an object inside in an array
+// console.log(mixArr[5](1,2)) => calling a function inside an array
+
+const allNumbers = [1,2,3,4,5,6,7,8,9]
+// console.log(allNumbers.length)
+for(let i=4; i< allNumbers.length -3; i++) {
+    console.log(allNumbers[i],'number i-value', i)
+}
