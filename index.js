@@ -55,5 +55,37 @@ const mixArr = [1,2,3,'four', {a: 'b', c: 'd'}, (a,b) => { return a + b}]
 const allNumbers = [1,2,3,4,5,6,7,8,9]
 // console.log(allNumbers.length)
 for(let i=4; i< allNumbers.length -3; i++) {
-    console.log(allNumbers[i],'number i-value', i)
+    // console.log(allNumbers[i],'number i-value', i)
 }
+
+//we can get value of an object using its key in two ways
+// a> object.key (for eg: person.fname)
+// b> Object['key'] (for eg: person['fname'])
+
+const person = {fname:"John", lname:"Doe", age:25};
+
+let text = "";
+for (let x in person) {
+ text += person[x];
+ // console.log(x, ':x value, text value:' ,text)
+}
+//console.log(text, ':text')
+
+
+const cars = ["BMW", "Volvo", "Mini"];
+
+let texttwo = "";
+for (let x of cars) {
+  texttwo += x;
+}
+// console.log(texttwo, ':texttwo')
+
+let textthree = ""
+let i = 0;
+
+do {
+   textthree += "<br>The number is " + i;
+   i++;
+}
+while (i < 10);  
+// console.log(textthree, ':textthree')
