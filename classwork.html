@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anupa CLasswork</title>
+</head>
+<body>
+    
+<div id="bahun-caste"></div>
+<div id="chhetri-caste"></div>
+<div id="other-caste"></div>
+    <script>
+        const allNames = [{
+            name: 'Anupa',
+            lastName: 'Kapri'
+        }, {
+            name: 'Paras',
+            lastName: 'KC'
+        }, {
+            name: 'Rohan',
+            lastName: 'Shrestha'
+        }
+        , {
+            name: 'Suman',
+            lastName: 'Lama'
+        },
+        {
+            name: 'Hari',
+            lastName: 'Ghimire'
+        },
+        {
+            name: 'Ronjan',
+            lastName: 'Khadka'
+        }
+    ]
+    const bahuns = [];
+    const chetteris = [];
+    const others = [];
+    for (i=0; i < allNames.length; i++){
+        const caste = allNames[i];
+        if (caste.lastName === 'Kapri' || caste.lastName === 'Ghimire' || caste.lastName === 'Khadka'){
+            bahuns.push(caste);
+        }
+        else if (caste.lastName === 'KC'){
+            chetteris.push(caste);
+        }
+        else {
+            others.push(caste); 
+        }
+    }
+    console.log("bahuns:", bahuns);
+    console.log("chetteris:", chetteris);
+    console.log("others:", others);
+    </script>
+</body>
+</html>

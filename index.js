@@ -88,4 +88,4 @@ do {
    i++;
 }
 while (i < 10);  
-// console.log(textthree, ':textthree')
+console.log(textthree, ':textthree')

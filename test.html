@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const allNames = [
+  { name: 'Anupa', gender: 'Female' },
+  { name: 'Anup', gender: 'male' },
+  { name: 'Sita', gender: 'Female' },
+  { name: 'Ram', gender: 'male' },
+  { name: 'Gita', gender: 'Female' },
+  { name: 'Hari', gender: 'male' }
+];
+
+const females = [];
+const males = [];
+
+for (let i = 0; i < allNames.length; i++) {
+  const person = allNames[i];
+
+  if (person.gender.toLowerCase() === 'female') {
+    females.push(person);
+  } else if (person.gender.toLowerCase() === 'male') {
+    males.push(person);
+  }
+}
+
+console.log("Females:", females);
+console.log("Males:", males);
+
+    </script>
+</body>
+</html>

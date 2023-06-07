@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ul id="list"></ul>
+    <!-- <script>
+        // directly adding style to the li
+        const arrayOne = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let i= 0;
+        do{
+            newLi = document.createElement("li");
+            if (i % 2 == 0){
+                newLi.style.color = "red";
+            }
+            else{
+                newLi.style.color = "blue";
+            }
+            newLi.textContent = arrayOne[i];
+            var parentElement = document.getElementById("list");
+            parentElement.appendChild(newLi);
+            console.log(newLi);
+            i++;
+        }
+        while(i<arrayOne.length);
+    </script> -->
+    <script>
+        // giving class to the li and then adding style 
+        const arrayOne = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let i= 0;
+        do{
+            newLi = document.createElement("li");
+            if (i % 2 == 0){
+                newLi.classList.add("even");
+                newLi.style.color = "red";
+            }
+            else{
+                newLi.classList.add("odd");
+                newLi.style.color = "blue";
+            }
+            newLi.textContent = arrayOne[i];
+            // var parentElement = document.getElementById("list");
+            // parentElement.appendChild(newLi);
+            document.getElementById("list").appendChild(newLi);
+            console.log(newLi);
+            i++;
+        }
+        while(i<arrayOne.length);
+    </script>
+</body>
+
+</html>
