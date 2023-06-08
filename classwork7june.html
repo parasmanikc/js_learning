@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+const allNames = [{
+            name: 'Nischal',
+            lastName: 'Upadhaya'
+        },{
+            name: 'Anupa',
+            lastName: 'Kapri'
+        }, {
+            name: 'Paras',
+            lastName: 'KC'
+        }, {
+            name: 'Rohan',
+            lastName: 'Shrestha'
+        }, {
+            name: 'Suman',
+            lastName: 'Lama'
+        }, {
+            name: 'Hari',
+            lastName: 'Adhikari'
+        },
+        {
+            name: 'Ronjan',
+            lastName: 'Gurung'
+        }
+    ]
+    let caste1= prompt("enter first caste");
+    let caste2 = prompt("enter second caste");
+    const willHaveFamilyProblem = (caste1, caste2) => {
+        for (let i=0; i<allNames.length; i++){
+            caste1= allNames[i];
+            caste2= allNames[i];
+            if (caste1.lastName === 'Upadhaya' && caste2.lastName === 'Adhikari'){
+                alert("Yes");
+            }
+            else if (caste1.lastName === 'Upadhaya' && caste2.lastName === 'Kc'){
+                alert("No");
+            }
+            else if(caste1.lastName === 'Upadhaya' && caste2.lastName === 'Shrestha'){
+                alert("No");
+            }
+            // else{
+            //     alert("try again");
+            // }
+        }
+        
+    } 
+    console.log(willHaveFamilyProblem('Upadhaya', 'Adhikari') )
+    // willHaveFamilyProblem('Anupa', 'Hari')  // No
+    // willHaveFamilyProblem('Anupa', 'Suman') // Yes
+    </script>
+</body>
+</html>
